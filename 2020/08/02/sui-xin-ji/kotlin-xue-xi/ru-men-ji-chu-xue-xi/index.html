@@ -1,0 +1,1522 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="入门基础学习, 库金的博客">
+    <meta name="description" content="学习笔记">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>入门基础学习 | 库金的博客</title>
+    <link rel="icon" type="image/png" href="/hexo.github.io/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/hexo.github.io/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/hexo.github.io/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/hexo.github.io/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/hexo.github.io/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/hexo.github.io/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/hexo.github.io/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/hexo.github.io/css/my.css">
+
+    <script src="/hexo.github.io/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.0.0"><link rel="stylesheet" href="/hexo.github.io/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/hexo.github.io/" class="waves-effect waves-light">
+                    
+                    <img src="/hexo.github.io/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">库金的博客</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/hexo.github.io/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/hexo.github.io/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/hexo.github.io/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/hexo.github.io/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/hexo.github.io/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/hexo.github.io/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/hexo.github.io/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/hexo.github.io/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">库金的博客</div>
+        <div class="logo-desc">
+            
+            学习笔记
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/hexo.github.io/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/hexo.github.io/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/hexo.github.io/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/hexo.github.io/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/hexo.github.io/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/hexo.github.io/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/hexo.github.io/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/hexo.github.io/medias/featureimages/11.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">入门基础学习</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/hexo.github.io/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/hexo.github.io/tags/%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">入门基础学习</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/hexo.github.io/categories/Kotlin%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                Kotlin学习
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-08-02
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2020-08-02
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.1k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    9 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <pre><code>        [TOC]</code></pre>
+<h1 id="1-编程的基础知识"><a href="#1-编程的基础知识" class="headerlink" title="1. 编程的基础知识"></a>1. 编程的基础知识</h1><h2 id="1-1-Hello-World"><a href="#1-1-Hello-World" class="headerlink" title="1.1 Hello World"></a>1.1 Hello World</h2><pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Hello, world!"</span><span class="token punctuation">)</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p><code>println()</code>需要单个参数，即 。通过将字符放在引号内来定义 。显示光标的参数后，将光标移动到新行，因此后续输出将显示在下一行</p>
+<h2 id="1-2-常量值定义var-amp-val"><a href="#1-2-常量值定义var-amp-val" class="headerlink" title="1.2 常量值定义var &amp; val"></a>1.2 常量值定义var &amp; val</h2><p>var: 可变的值</p>
+<p>val:只能初始化，不能被重新分配</p>
+<h2 id="1-3-函数-fun"><a href="#1-3-函数-fun" class="headerlink" title="1.3 函数 fun"></a>1.3 函数 fun</h2><p>函数结合了一组活动，是组织程序和重新使用代码的最基本方法。</p>
+<p>将信息传递到函数中，该函数使用该信息来计算和生成结果。函数的基本形式是：</p>
+<p>fun 方法名（参数：类型，参数：类型）：返回类型{</p>
+<p>​    代码</p>
+<p>​    retrun 结果</p>
+<p>}</p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">functionName</span><span class="token punctuation">(</span>p1<span class="token operator">:</span> Type1<span class="token punctuation">,</span> p2<span class="token operator">:</span> Type2<span class="token punctuation">,</span> <span class="token operator">..</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token operator">:</span> ReturnType &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+  lines of code
+  <span class="token keyword">return</span> result
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<h2 id="1-4-if表达式"><a href="#1-4-if表达式" class="headerlink" title="1.4 if表达式"></a>1.4 if表达式</h2><p>关键字测试表达式以查看它是否是 或 以及根据结果执行操作。真假的表达叫做布尔</p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"It's true!"</span><span class="token punctuation">)</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">10</span> <span class="token operator">&lt;</span> <span class="token number">11</span><span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"10 &lt; 11"</span><span class="token punctuation">)</span>
+    <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"ten is less than eleven"</span><span class="token punctuation">)</span>
+  &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/* Output:
+It's true!
+10 &lt; 11
+ten is less than eleven
+*/</span></code></pre>
+<h2 id="1-5-字符串模板"><a href="#1-5-字符串模板" class="headerlink" title="1.5 字符串模板"></a>1.5 字符串模板</h2><p>模板会将该标识符的内容插入到 ：<code>$``String``String</code></p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token keyword">val</span> answer <span class="token operator">=</span> <span class="token number">42</span>
+  <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Found <span class="token interpolation variable">$answer</span>!"</span><span class="token punctuation">)</span>     <span class="token comment" spellcheck="true">// [1]</span>
+  <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"printing a <span class="token interpolation variable">$1</span>"</span><span class="token punctuation">)</span>      <span class="token comment" spellcheck="true">// [2]</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/* Output:
+Found 42!
+printing a $1
+*/</span></code></pre>
+<p>将表达式放在内部将对其进行计算。返回值转换为 ，并插入到生成的 ：<code>${}``String``String</code></p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token keyword">val</span> condition <span class="token operator">=</span> <span class="token boolean">true</span>
+  <span class="token function">println</span><span class="token punctuation">(</span>
+    <span class="token string">"$&amp;#123;if (condition) 'a' else 'b'&amp;#125;"</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// [1]</span>
+  <span class="token keyword">val</span> x <span class="token operator">=</span> <span class="token number">11</span>
+  <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"<span class="token interpolation variable">$x</span> + 4 = $&amp;#123;x + 4&amp;#125;"</span><span class="token punctuation">)</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/* Output:
+a
+11 + 4 = 15
+*/</span></code></pre>
+<p>1.6 数字类型</p>
+<p>数字的基本数学运算符是大多数编程语言中可用的运算符：加法（）、减法（）、除法（）、乘法（）和模量（），它们从整数除法生成剩余数：<code>+``-``/``*``%</code></p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token keyword">val</span> numerator<span class="token operator">:</span> Int <span class="token operator">=</span> <span class="token number">19</span>
+  <span class="token keyword">val</span> denominator<span class="token operator">:</span> Int <span class="token operator">=</span> <span class="token number">10</span>
+  <span class="token function">println</span><span class="token punctuation">(</span>numerator <span class="token operator">%</span> denominator<span class="token punctuation">)</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/* Output:
+9
+*/</span></code></pre>
+<p>计算<em>身体质量指数</em>（BMI），即重量（以公斤为单位）除以高度的平方（米）。如果你的体重指数低于 ，你体重不足。和 之间是正常的权重。体重指数越高，体重超标</p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">bmiMetric</span><span class="token punctuation">(</span>
+  weight<span class="token operator">:</span> Double<span class="token punctuation">,</span>
+  height<span class="token operator">:</span> Double
+<span class="token punctuation">)</span><span class="token operator">:</span> String &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token keyword">val</span> bmi <span class="token operator">=</span> weight <span class="token operator">/</span> <span class="token punctuation">(</span>height <span class="token operator">*</span> height<span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// [1]</span>
+  <span class="token keyword">return</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>bmi <span class="token operator">&lt;</span> <span class="token number">18.5</span><span class="token punctuation">)</span> <span class="token string">"体重不足"</span>
+    <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>bmi <span class="token operator">&lt;</span> <span class="token number">25</span><span class="token punctuation">)</span> <span class="token string">"体重正常"</span>
+    <span class="token keyword">else</span> <span class="token string">"体重超重"</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+
+<span class="token keyword">fun</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token keyword">val</span> weight <span class="token operator">=</span> <span class="token number">72.57</span> <span class="token comment" spellcheck="true">// 160 lbs</span>
+  <span class="token keyword">val</span> height <span class="token operator">=</span> <span class="token number">1.727</span> <span class="token comment" spellcheck="true">// 68 inches</span>
+  <span class="token keyword">val</span> status <span class="token operator">=</span> <span class="token function">bmiMetric</span><span class="token punctuation">(</span>weight<span class="token punctuation">,</span> height<span class="token punctuation">)</span>
+  <span class="token function">println</span><span class="token punctuation">(</span>status<span class="token punctuation">)</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<h2 id="1-6-boolean"><a href="#1-6-boolean" class="headerlink" title="1.6 boolean"></a>1.6 boolean</h2><ul>
+<li><code>&amp;&amp;</code>（和）： 仅在运算符左侧的表达式和右侧的表达式都是 时生成 。<code>true``Boolean``true</code></li>
+<li><code>||</code>（或）： 如果运算符的左侧或右侧的表达式为 ，或者两者都是 ，则生成 。<code>true``true``true</code></li>
+</ul>
+<h2 id="1-7-while"><a href="#1-7-while" class="headerlink" title="1.7 while"></a>1.7 while</h2><p>最基本的重复形式使用关键字。只要控制布尔表达式为 ： <code>while``true</code></p>
+<pre><code>while (Boolean-expression) &amp;#123;
+  // Code to be repeated
+&amp;#125;</code></pre>
+<p>还有一种方法使用 ，与 关键字一起使用：<code>while``do</code></p>
+<pre><code>do &amp;#123;
+  // Code to be repeated
+&amp;#125; while (Boolean-expression)</code></pre>
+<h2 id="1-8-循环和范围"><a href="#1-8-循环和范围" class="headerlink" title="1.8 循环和范围"></a>1.8 循环和范围</h2><p>值集可以是整数的范围,关键字指示您正在单步执行值：<code>String``in</code></p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">for</span><span class="token punctuation">(</span>v <span class="token keyword">in</span> values<span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* ... */</span> &amp;#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span>i <span class="token keyword">in</span> <span class="token number">1</span><span class="token operator">..</span><span class="token number">3</span><span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Hey <span class="token interpolation variable">$i</span>!"</span><span class="token punctuation">)</span>
+  &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/* Output:
+Hey 1!
+Hey 2!
+Hey 3!
+*/</span></code></pre>
+<h2 id="1-9-关键字in"><a href="#1-9-关键字in" class="headerlink" title="1.9 关键字in"></a>1.9 关键字<code>in</code></h2><p>关键字测试值是否在一个范围内。<code>in</code></p>
+<pre class=" language-kotlin"><code class="language-kotlin">un <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token keyword">val</span> percent <span class="token operator">=</span> <span class="token number">35</span>
+  <span class="token function">println</span><span class="token punctuation">(</span>percent <span class="token keyword">in</span> <span class="token number">1</span><span class="token operator">..</span><span class="token number">100</span><span class="token punctuation">)</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/* Output:
+true
+*/</span></code></pre>
+<h3 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h3><blockquote>
+<p>三引号字符串不仅对多行字符串有用，而且对于创建正则表达式模式也很有用，因为您不需要用反斜杠转义反斜杠。</p>
+<p>以下模式匹配的日期格式为<u>13.06.1992</u>(两个数字，一个点，两个数字，一个点，四个数字):</p>
+<p>fun getPattern() = “””\d{2}.\d{2}.\d{4}”””</p>
+<p>使用month变量重写此模式，使其匹配1992年6月13日格式的日期(两个数字、一个空格、一个月的缩写、一个空格、四个数字)。</p>
+</blockquote>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">val</span> month <span class="token operator">=</span> <span class="token string">"(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"</span>
+
+<span class="token keyword">fun</span> <span class="token function">getPattern</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> String <span class="token operator">=</span> <span class="token raw-string string">"""\d&amp;#123;2&amp;#125; <span class="token interpolation variable">$month</span> \d&amp;#123;4&amp;#125;"""</span></code></pre>
+<h2 id="1-10-可空类型"><a href="#1-10-可空类型" class="headerlink" title="1.10 可空类型?"></a>1.10 可空类型?</h2><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><blockquote>
+<p>学习零安全和安全调用的Kotlin和重写以下Java代码，使它只有一个if表达式:</p>
+</blockquote>
+<h3 id="java写法"><a href="#java写法" class="headerlink" title="java写法"></a>java写法</h3><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">sendMessageToClient</span><span class="token punctuation">(</span>
+    <span class="token annotation punctuation">@Nullable</span> Client client<span class="token punctuation">,</span>
+    <span class="token annotation punctuation">@Nullable</span> String message<span class="token punctuation">,</span>
+    <span class="token annotation punctuation">@NotNull</span> Mailer mailer
+<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>client <span class="token operator">==</span> null <span class="token operator">||</span> message <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+
+    PersonalInfo personalInfo <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">getPersonalInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>personalInfo <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+
+    String email <span class="token operator">=</span> personalInfo<span class="token punctuation">.</span><span class="token function">getEmail</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>email <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+
+    mailer<span class="token punctuation">.</span><span class="token function">sendMessage</span><span class="token punctuation">(</span>email<span class="token punctuation">,</span> message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<h3 id="Kotlin写法"><a href="#Kotlin写法" class="headerlink" title="Kotlin写法"></a>Kotlin写法</h3><pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">sendMessageToClient</span><span class="token punctuation">(</span>
+        client<span class="token operator">:</span> Client<span class="token operator">?</span><span class="token punctuation">,</span> message<span class="token operator">:</span> String<span class="token operator">?</span><span class="token punctuation">,</span> mailer<span class="token operator">:</span> Mailer
+<span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">val</span> email<span class="token operator">=</span>client<span class="token operator">?</span><span class="token punctuation">.</span>personalInfo<span class="token operator">?</span><span class="token punctuation">.</span>email
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>email<span class="token operator">!=</span><span class="token keyword">null</span><span class="token operator">&amp;&amp;</span>message<span class="token operator">!=</span><span class="token keyword">null</span><span class="token punctuation">)</span>
+        mailer<span class="token punctuation">.</span><span class="token function">sendMessage</span><span class="token punctuation">(</span>email<span class="token punctuation">,</span>message<span class="token punctuation">)</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<h2 id="1-11-类对象-class"><a href="#1-11-类对象-class" class="headerlink" title="1.11 类对象(class)"></a>1.11 类对象(class)</h2><p><em>对象使用属性(val 和 var)存储数据，并使用函数对此数据执行操作。</em></p>
+<ul>
+<li>类: 为本质上是新数据类型的东西定义属性和函数。类也称为用户定义类型。</li>
+<li>成员: 类的属性或函数。</li>
+<li>成员函数: 仅用于特定对象类的函数。</li>
+<li>创建对象: 创建类的 val 或 var。也称为创建该类的实例。</li>
+</ul>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+  <span class="token keyword">val</span> r1 <span class="token operator">=</span> <span class="token function">IntRange</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span>
+  <span class="token keyword">val</span> r2 <span class="token operator">=</span> <span class="token function">IntRange</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span>
+  <span class="token function">println</span><span class="token punctuation">(</span>r1<span class="token punctuation">)</span>
+  <span class="token function">println</span><span class="token punctuation">(</span>r2<span class="token punctuation">)</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/* Output:
+0..10
+5..7
+*/</span></code></pre>
+<h3 id="面向对象-class"><a href="#面向对象-class" class="headerlink" title="面向对象(class)"></a>面向对象(class)</h3><h4 id="1-11-1-函数可见性"><a href="#1-11-1-函数可见性" class="headerlink" title="1.11.1 函数可见性"></a>1.11.1 函数可见性</h4><table>
+<thead>
+<tr>
+<th>修饰符</th>
+<th>kotlin</th>
+<th>java</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>private</td>
+<td>当前类内部可见</td>
+<td>当前类内部可见</td>
+</tr>
+<tr>
+<td>public</td>
+<td>(默认值)，所有类可见</td>
+<td>所有类可见</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>只对当前类,子类可见</td>
+<td>只对当前类,子类可见，同一包下可见</td>
+</tr>
+<tr>
+<td>internal</td>
+<td>对同一模块的类可见</td>
+<td>无</td>
+</tr>
+</tbody></table>
+<h4 id="1-11-2-创建类"><a href="#1-11-2-创建类" class="headerlink" title="1.11.2 创建类"></a>1.11.2 创建类</h4><p>面向对象便需要创建类对象，类就是对事物的一种封装，类名通常是名词，类中可以拥有自己的字段和函数，字段是名称，函数是行为动词，面向对象还有继承，多态，等</p>
+<ol>
+<li><p>创建类</p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">class</span> Person&amp;#<span class="token number">125</span><span class="token punctuation">;</span>&amp;#<span class="token number">123</span><span class="token punctuation">;</span>&amp;#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+</li>
+<li><p>加入字段及函数</p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">class</span> Person&amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> name<span class="token operator">=</span><span class="token string">""</span>
+    <span class="token keyword">var</span> age<span class="token operator">=</span><span class="token number">0</span>
+    <span class="token keyword">fun</span> <span class="token function">eat</span><span class="token punctuation">(</span><span class="token punctuation">)</span>&amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token function">println</span><span class="token punctuation">(</span>name<span class="token operator">+</span>age<span class="token punctuation">)</span>
+    &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+</li>
+<li><p>类实例化</p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">val</span> p<span class="token operator">=</span><span class="token function">person</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+</li>
+<li><p>类实例化操作</p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> man&amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">val</span> p<span class="token operator">=</span><span class="token function">person</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    p<span class="token punctuation">.</span>name<span class="token operator">=</span><span class="token string">"kotlin"</span>
+    p<span class="token punctuation">.</span>age<span class="token operator">=</span><span class="token number">19</span>
+    p<span class="token punctuation">.</span><span class="token function">eat</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+</li>
+</ol>
+<h5 id="（1）继承"><a href="#（1）继承" class="headerlink" title="（1）继承"></a>（1）继承</h5><ol>
+<li><p>kotlin默认所有非抽象类都是不可以被继承的，想要被继承需要 open 关键字</p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">open</span> <span class="token keyword">class</span> Person&amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token operator">..</span><span class="token punctuation">.</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+</li>
+<li><p>Kotlin继承用 ：替代extends，（）表示构造函数</p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">class</span> Student<span class="token operator">:</span><span class="token function">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span>&amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> name<span class="token operator">=</span><span class="token string">""</span>
+    <span class="token keyword">var</span> grade<span class="token operator">=</span><span class="token number">0</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+</li>
+</ol>
+<h5 id="（2）接口（interface）"><a href="#（2）接口（interface）" class="headerlink" title="（2）接口（interface）"></a>（2）接口（interface）</h5><p>基本和java一样 interface</p>
+<p>接口是”独立和往往不相关的系统相遇和操作或相互通信的地方。因此，接口是系统不同部分之间的通信手段。</p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">interface</span> Study&amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">fun</span> <span class="token function">readBooks</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token comment" spellcheck="true">//默认自动实现逻辑</span>
+    <span class="token keyword">fun</span> <span class="token function">doHomeworks</span><span class="token punctuation">(</span><span class="token punctuation">)</span>&amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"do homework default implementation."</span><span class="token punctuation">)</span>
+    &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<h5 id="（3）构造函数"><a href="#（3）构造函数" class="headerlink" title="（3）构造函数"></a>（3）构造函数</h5><p>构造函数是创建新对象的特殊函数，默认都会有一个空的构造函数</p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">class</span> <span class="token function">Student</span><span class="token punctuation">(</span><span class="token keyword">val</span> sno<span class="token operator">:</span>String<span class="token punctuation">,</span><span class="token keyword">val</span> grade<span class="token operator">:</span>Int<span class="token punctuation">)</span><span class="token operator">:</span><span class="token function">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span>&amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token keyword">val</span> student<span class="token operator">=</span><span class="token function">Student</span><span class="token punctuation">(</span><span class="token string">"a123"</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span></code></pre>
+<h6 id="主构造函数"><a href="#主构造函数" class="headerlink" title="主构造函数"></a>主构造函数</h6><pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">init</span>&amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<h6 id="次构造函数"><a href="#次构造函数" class="headerlink" title="次构造函数"></a>次构造函数</h6><p>当没有主构造函数时，this 改为 super</p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">constructor</span><span class="token punctuation">(</span>name<span class="token operator">:</span>String<span class="token punctuation">,</span>age<span class="token operator">:</span>Int<span class="token punctuation">)</span><span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>name<span class="token punctuation">,</span>age<span class="token punctuation">)</span>&amp;#<span class="token number">123</span><span class="token punctuation">;</span>&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>&amp;#<span class="token number">123</span><span class="token punctuation">;</span>&amp;#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<h4 id="特定的class"><a href="#特定的class" class="headerlink" title="特定的class"></a>特定的class</h4><h5 id="Data-class-数据类"><a href="#Data-class-数据类" class="headerlink" title="Data class 数据类"></a>Data class 数据类</h5><h5 id="object-单例类"><a href="#object-单例类" class="headerlink" title="object 单例类"></a>object 单例类</h5><p>java写法</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Singleton</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//禁用外部创建实例</span>
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token function">Singleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//单例模式</span>
+    <span class="token keyword">private</span> <span class="token keyword">static</span> Singleton instance<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">synchronized</span> <span class="token keyword">static</span> Singleton <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>instance<span class="token operator">==</span>null<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            instance<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Singleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> instance<span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//测试方法</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">singletonTest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"singletonTest is called."</span><span class="token punctuation">)</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+main<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    Singleton singleton<span class="token operator">=</span>Singleton<span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    singleton<span class="token punctuation">.</span><span class="token function">singletonTest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<p>kotlin写法</p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">object</span> Singleton&amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">fun</span> <span class="token function">singletonTest</span><span class="token punctuation">(</span><span class="token punctuation">)</span>&amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"singletonTest is called."</span><span class="token punctuation">)</span>
+    &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+main&amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+    Singleton<span class="token punctuation">.</span><span class="token function">singletonTest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span></code></pre>
+<h5 id="sealed类-密封类（只有同一文件内才可使用）"><a href="#sealed类-密封类（只有同一文件内才可使用）" class="headerlink" title="sealed类 密封类（只有同一文件内才可使用）"></a>sealed类 密封类（只有同一文件内才可使用）</h5><h5 id="嵌套类-内部类-匿名类"><a href="#嵌套类-内部类-匿名类" class="headerlink" title="嵌套类 内部类 匿名类"></a>嵌套类 内部类 匿名类</h5><p>类可以嵌套在其他类中：</p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">class</span> Outer &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">val</span> bar<span class="token operator">:</span> Int <span class="token operator">=</span> <span class="token number">1</span>
+    <span class="token keyword">class</span> Nested &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">fun</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">2</span>
+    &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+
+<span class="token keyword">val</span> demo <span class="token operator">=</span> Outer<span class="token punctuation">.</span><span class="token function">Nested</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// == 2</span></code></pre>
+<h4 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h4><p>标记为内部的嵌套<em>类</em>可以访问其外部类的成员。内部类包含对外部类对象的引用：</p>
+<pre class=" language-kot"><code class="language-kot">class Outer &#123;
+    private val bar: Int = 1
+    inner class Inner &#123;
+        fun foo() = bar
+    &#125;
+&#125;
+
+val demo = Outer().Inner().foo() // == 1</code></pre>
+<h4 id="匿名内部类"><a href="#匿名内部类" class="headerlink" title="匿名内部类"></a>匿名内部类</h4><p>使用对象表达式创建匿名内部<a target="_blank" rel="noopener" href="https://kotlinlang.org/docs/reference/object-declarations.html#object-expressions">类实例</a>：</p>
+<pre class=" language-kotlin"><code class="language-kotlin">window<span class="token punctuation">.</span><span class="token function">addMouseListener</span><span class="token punctuation">(</span><span class="token keyword">object</span> <span class="token operator">:</span> <span class="token function">MouseAdapter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">mouseClicked</span><span class="token punctuation">(</span>e<span class="token operator">:</span> MouseEvent<span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token operator">..</span><span class="token punctuation">.</span> &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">mouseEntered</span><span class="token punctuation">(</span>e<span class="token operator">:</span> MouseEvent<span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token operator">..</span><span class="token punctuation">.</span> &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span></code></pre>
+<h2 id="1-12-Lambda-编程"><a href="#1-12-Lambda-编程" class="headerlink" title="1.12 Lambda 编程"></a>1.12 Lambda 编程</h2><p>核心思想（简化编程）,集合的函数式API是学习Lambda编程的绝佳示例</p>
+<p>接口 List  实现类  ArraList    </p>
+<p>​        Set                HasSet</p>
+<p>​        Map            HasMap</p>
+<ol>
+<li>集合创建与遍历</li>
+</ol>
+<ol start="2">
+<li><p>集合函数式API </p>
+</li>
+<li><p>Java </p>
+</li>
+</ol>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/hexo.github.io/about" rel="external nofollow noreferrer">Ku Jin</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://kujin521.github.io/hexo.github.io/hexo.github.io/2020/08/02/sui-xin-ji/kotlin-xue-xi/ru-men-ji-chu-xue-xi/">https://kujin521.github.io/hexo.github.io/hexo.github.io/2020/08/02/sui-xin-ji/kotlin-xue-xi/ru-men-ji-chu-xue-xi/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/hexo.github.io/about" target="_blank">Ku Jin</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/hexo.github.io/tags/%E5%85%A5%E9%97%A8%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">入门基础学习</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/hexo.github.io/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/hexo.github.io/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/hexo.github.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/hexo.github.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/hexo.github.io/2020/08/02/sui-xin-ji/kotlin-xue-xi/ru-men-jian-jie/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/hexo.github.io/medias/featureimages/6.jpg" class="responsive-img" alt="入门简介">
+                        
+                        <span class="card-title">入门简介</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                                    [Toc]
+官方网站：https://kotlinlang.org/https://kotlinlang.org/
+标语：*一种让开发人员****更快乐的现代编程语言。***永远开源github
+
+Kotlin的由来，就是因
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-02
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/hexo.github.io/categories/Kotlin%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    Kotlin学习
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/hexo.github.io/tags/%E5%85%A5%E9%97%A8%E7%AE%80%E4%BB%8B/">
+                        <span class="chip bg-color">入门简介</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/hexo.github.io/2020/08/02/sui-xin-ji/kotlin-xue-xi/1.xue-xi-wang-zhi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/hexo.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="1.学习网址">
+                        
+                        <span class="card-title">1.学习网址</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                                    [toc]
+官方网址关键字查看
+
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/hexo.github.io/categories/Kotlin%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    Kotlin学习
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/hexo.github.io/tags/1-%E5%AD%A6%E4%B9%A0%E7%BD%91%E5%9D%80/">
+                        <span class="chip bg-color">1.学习网址</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/hexo.github.io/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/hexo.github.io/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/hexo.github.io/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/hexo.github.io/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/hexo.github.io/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/hexo.github.io/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.4'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/hexo.github.io/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="/hexo.github.io/about" target="_blank">Ku Jin</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">42.7k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/kujin521" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1604323361@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1604323361" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1604323361" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/hexo.github.io/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/hexo.github.io/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/hexo.github.io/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/hexo.github.io/libs/materialize/materialize.min.js"></script>
+    <script src="/hexo.github.io/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/hexo.github.io/libs/aos/aos.js"></script>
+    <script src="/hexo.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/hexo.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/hexo.github.io/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/hexo.github.io/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/hexo.github.io/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i["DaoVoiceObject"] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            a.charset = "utf-8";
+            m.parentNode.insertBefore(a, m)
+        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
+        daovoice('init', {
+            app_id: "70af224b"
+        });
+        daovoice('update');
+    </script>
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/hexo.github.io/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

@@ -2,9 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/.deploy_git" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/source/_posts/随心记" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/themes/hexo-theme-matery" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/themes/icarus" vcs="Git" />
   </component>
 </project>

@@ -13,8 +13,8 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://kujin521.github.io/hexo.github.io # 配置url 使主题可以正常显示
-root: /hexo.github.io/
+url: https://kujin521.github.io/Blog # 配置url 使主题可以正常显示
+root: /Blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -125,5 +125,5 @@ permalink_pinyin:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:	# 自动部署github
   type: git
-  repository: https://github.com/kujin521/hexo.github.io.git
+  repository: https://github.com/kujin521/Blog.git
   branch: hexo

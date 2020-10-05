@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="随心记/README, 库金的博客">
+    <meta name="keywords" content="2-1 博客文件开头模板, 库金的博客">
     <meta name="description" content="学习笔记">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>随心记/README | 库金的博客</title>
+    <title>2-1 博客文件开头模板 | 库金的博客</title>
     <link rel="icon" type="image/png" href="/Blog/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/Blog/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/Blog/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/Blog/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">随心记/README</h1>
+                    <h1 class="description center-align post-title">2-1 博客文件开头模板</h1>
                 </div>
             </div>
         </div>
@@ -428,12 +428,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/Blog/tags/GitHub%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">GitHub学习</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/Blog/categories/GitHub%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                GitHub学习
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -449,21 +462,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-09-26
+                    2020-10-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    456
+                    84
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    1 分
                 </div>
                 
 
@@ -478,81 +491,14 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>并发编程的目的是为了让程序运行得更快，但是，并不是启动更多的线程就能让程序最大限度地并发执行。在进行并发编程时，如果希望通过多线程执行任务让程序运行得更快，会面临非常多的挑战，比如上下文切换的问题、死锁的问题，以及受限于硬件和软件的资源限制问题</p>
-<h2 id="多线程一定快吗"><a href="#多线程一定快吗" class="headerlink" title="多线程一定快吗?"></a>多线程一定快吗?</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>concurrthread<span class="token punctuation">;</span>
-
-<span class="token comment" spellcheck="true">/**
- * 类：
- * 编写人：kujin
- * 创建时间：2020/9/26
- */</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ConcurrencyTest</span> <span class="token punctuation">{</span>
-    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">long</span> count<span class="token operator">=</span><span class="token number">100</span><span class="token operator">*</span><span class="token number">10000</span><span class="token punctuation">;</span>
-
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> InterruptedException <span class="token punctuation">{</span>
-        <span class="token function">concurrency</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token function">serial</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">concurrency</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> InterruptedException <span class="token punctuation">{</span>
-        <span class="token keyword">long</span> start <span class="token operator">=</span> System<span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">long</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> count<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            a <span class="token operator">+=</span> <span class="token number">5</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">int</span> b<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">long</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> count<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            b<span class="token operator">--</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">long</span> time <span class="token operator">=</span> System<span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span>start<span class="token punctuation">;</span>
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"currency: "</span><span class="token operator">+</span>time<span class="token operator">+</span><span class="token string">"ms,b="</span><span class="token operator">+</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">serial</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> InterruptedException <span class="token punctuation">{</span>
-        <span class="token keyword">long</span> start <span class="token operator">=</span> System<span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        Thread thread <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Runnable</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token annotation punctuation">@Override</span>
-            <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-                <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">long</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> count<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                    a <span class="token operator">+=</span> <span class="token number">5</span><span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        thread<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">int</span> b<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">long</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> count<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            b<span class="token operator">--</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">long</span> time <span class="token operator">=</span> System<span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span>start<span class="token punctuation">;</span>
-        thread<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"currency: "</span><span class="token operator">+</span>time<span class="token operator">+</span><span class="token string">"ms,b="</span><span class="token operator">+</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-<span class="token number">10</span>万次
-    并发<span class="token operator">:</span> 48ms<span class="token punctuation">,</span>b<span class="token operator">=</span><span class="token operator">-</span><span class="token number">100000</span>
-    串行<span class="token operator">:</span> 2ms<span class="token punctuation">,</span>b<span class="token operator">=</span><span class="token operator">-</span><span class="token number">100000</span>
-<span class="token number">1</span>亿次
-   并发<span class="token operator">:</span> 85ms<span class="token punctuation">,</span>b<span class="token operator">=</span><span class="token operator">-</span><span class="token number">100000000</span>
-    串行<span class="token operator">:</span> 70ms<span class="token punctuation">,</span>b<span class="token operator">=</span><span class="token operator">-</span><span class="token number">100000000</span>
-<span class="token number">10</span>亿次
-    并发<span class="token operator">:</span> 428ms<span class="token punctuation">,</span>b<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1000000000</span>
-    串行<span class="token operator">:</span> 770ms<span class="token punctuation">,</span>b<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1000000000</span></code></pre>
-<p>发现并发执行次数特别巨大时 并发才比串行快</p>
-<p>这是因为线程有创建 和 上下文 切换 的开销</p>
-<h2 id="如何减少上下文切换"><a href="#如何减少上下文切换" class="headerlink" title="如何减少上下文切换"></a>如何减少上下文切换</h2><ul>
-<li><p>无锁并发编程</p>
-<p>多线程竞争锁时 会引起上下文切换</p>
-<p>多线程处理时 可以避免使用锁</p>
-<p>如 将数据ID 按照</p>
-</li>
-<li><p>CAS算法</p>
-</li>
-<li><p>使用最小线程</p>
-</li>
-<li><p>协程</p>
-</li>
-</ul>
+                <pre class=" language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> Untitled <span class="token comment" spellcheck="true"># 标题=文件名</span>
+<span class="token key atrule">auther</span><span class="token punctuation">:</span> ku jin <span class="token comment" spellcheck="true"># 作者</span>
+<span class="token key atrule">categories</span><span class="token punctuation">:</span> <span class="token comment" spellcheck="true"># 分类=根文件夹名</span>
+ <span class="token punctuation">-</span> GitHub学习
+<span class="token key atrule">tags</span><span class="token punctuation">:</span> <span class="token comment" spellcheck="true"># 标签=目标文件夹</span>
+ <span class="token punctuation">-</span> Untitled 
+<span class="token punctuation">---</span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -596,7 +542,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://kujin521.github.io/Blog/Blog/2020/10/05/sui-xin-ji/readme/">https://kujin521.github.io/Blog/Blog/2020/10/05/sui-xin-ji/readme/</a>
+                    <a href="https://kujin521.github.io/Blog/Blog/2020/10/05/sui-xin-ji/github-xue-xi/chuang-jian-ge-ren-bo-ke/2-1-bo-ke-wen-jian-kai-tou-mo-ban/">https://kujin521.github.io/Blog/Blog/2020/10/05/sui-xin-ji/github-xue-xi/chuang-jian-ge-ren-bo-ke/2-1-bo-ke-wen-jian-kai-tou-mo-ban/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -633,7 +579,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/Blog/tags/GitHub%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">GitHub学习</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -803,28 +753,23 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/Blog/2020/10/05/sui-xin-ji/android-xue-xi/3-1-wang-luo-fang-wen/">
+                <a href="/Blog/2020/10/05/sui-xin-ji/github-xue-xi/chuang-jian-ge-ren-bo-ke/2-2-pi-liang-xiu-gai-md-wen-jian/">
                     <div class="card-image">
                         
                         
-                        <img src="/Blog/medias/featureimages/16.jpg" class="responsive-img" alt="随心记/Android学习/3-1网络访问">
+                        <img src="/Blog/medias/featureimages/8.jpg" class="responsive-img" alt="2-2 批量修改md文件">
                         
-                        <span class="card-title">随心记/Android学习/3-1网络访问</span>
+                        <span class="card-title">2-2 批量修改md文件</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            [toc]
-1.WebView的用法
-WevView是andorid控件,可以显示简单的网页
+                            ​        
 
-
-编写main.xml界面
-关键代码
-添加AndroidMainifest.xml权限
-
-&lt;?xml version="1.0" enco
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src
                         
                     </div>
                     <div class="publish-info">
@@ -833,11 +778,23 @@ WevView是andorid控件,可以显示简单的网页
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Ku Jin
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/Blog/categories/GitHub%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    GitHub学习
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/Blog/tags/GitHub%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">GitHub学习</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -846,22 +803,25 @@ WevView是andorid控件,可以显示简单的网页
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Blog/2020/10/05/sui-xin-ji/readme/">
+                <a href="/Blog/2020/10/05/sui-xin-ji/github-xue-xi/chuang-jian-ge-ren-bo-ke/1-1-jian-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/Blog/medias/featureimages/15.jpg" class="responsive-img" alt="随心记/README">
+                        <img src="/Blog/medias/featureimages/0.jpg" class="responsive-img" alt="1-1简介">
                         
-                        <span class="card-title">随心记/README</span>
+                        <span class="card-title">1-1简介</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            并发编程的目的是为了让程序运行得更快，但是，并不是启动更多的线程就能让程序最大限度地并发执行。在进行并发编程时，如果希望通过多线程执行任务让程序运行得更快，会面临非常多的挑战，比如上下文切换的问题、死锁的问题，以及受限于硬件和软件的资源限制
+                            简介github pages + Hexo 创建个人博客
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            i
                         
                     </div>
                     <div class="publish-info">
@@ -870,13 +830,24 @@ WevView是andorid控件,可以显示简单的网页
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Ku Jin
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/Blog/categories/GitHub%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    GitHub学习
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/Blog/tags/GitHub%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">GitHub学习</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1080,7 +1051,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">125.4k</span>&nbsp;字
+                class="white-color">134.5k</span>&nbsp;字
             
             
             

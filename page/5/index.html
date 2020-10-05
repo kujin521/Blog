@@ -360,34 +360,28 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/Blog/2020/10/05/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/5-2-lian-he-zhu-jian/">
+                    <a href="/Blog/2020/09/23/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/java-lian-jie-oracle/day1/">
                         <div class="card-image">
                             
                             
-                            <img src="/Blog/medias/featureimages/5.jpg" class="responsive-img" alt="5-2 联合主键">
+                            <img src="/Blog/medias/featureimages/16.jpg" class="responsive-img" alt="day1-">
                             
-                            <span class="card-title">5-2 联合主键</span>
+                            <span class="card-title">day1-</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                联合主键
-联合主键 使用2个或2个以上的字段作为主键
+                                官方示例代码:https://github.com/oracle/oracle-db-examples
+甲骨文JDBC精简驱动程序使用ojdbc8.jar 驱动连接Oracle
 
-
-添加联合主键
-
-创建表时 添加联合主键
-CREATE TABLE table_name(
-    .....
-    primary key(column name1,...colu
+修改host地址 端口port 服务名service_nam
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-23
                             </span>
                             <span class="publish-author">
                                 
@@ -416,31 +410,31 @@ CREATE TABLE table_name(
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/Blog/2020/10/05/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/5-1-zhu-jian-yue-shu/">
+                    <a href="/Blog/2020/09/23/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/oracle-yuan-cheng-fang-wen-wen-ti-zong-jie/">
                         <div class="card-image">
                             
                             
-                            <img src="/Blog/medias/featureimages/19.jpg" class="responsive-img" alt="5-1 主键约束">
+                            <img src="/Blog/medias/featureimages/14.jpg" class="responsive-img" alt="Oracle远程访问问题总结">
                             
-                            <span class="card-title">5-1 主键约束</span>
+                            <span class="card-title">Oracle远程访问问题总结</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                主键约束什么是主键?
-​    主键(primary key)是 就是数据表中一个或多个字段 用于唯一标识
-添加主键约束
-在创建数据表时添加主键约束
- --主键约束
-CREATE TABLE tb_students(
-    stu_num
+                                1. 创建数据库dbca
+关键点: 数据库名 口令设置  口令管理 需要有没被锁定的用户 默认sysbda
+2. 开启监听打开端口或关闭防火墙# 切换到管理员
+su root
+#查看端口状态
+firewall-cmd --state
+#开放
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-23
                             </span>
                             <span class="publish-author">
                                 
@@ -469,49 +463,36 @@ CREATE TABLE tb_students(
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/Blog/2020/10/05/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/4-3-shu-ju-ku-ding-yi-yu-yan/">
+                    <a href="/Blog/2020/09/23/sui-xin-ji/linux-ru-men/linux-she-zhi-fang-huo-qiang/">
                         <div class="card-image">
                             
                             
-                            <img src="/Blog/medias/featureimages/23.jpg" class="responsive-img" alt="4-3 数据库定义语言">
+                            <img src="/Blog/medias/featureimages/4.jpg" class="responsive-img" alt="LINUX设置防火墙">
                             
-                            <span class="card-title">4-3 数据库定义语言</span>
+                            <span class="card-title">LINUX设置防火墙</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                常见Oracle数据库对象
+                                Linux设置防火墙2019.02.25 11:01:08字数 42阅读 189Centos 7之前的防火墙基本都是修改iptables
 
-用户
-角色
-表空间
-数据表
-索引
-视图
-序列
-同义词
-存储过程
-函数
-触发器
-程序包
+service  iptables  status        查看防火墙状态
 
-数据库定于语言 DDL 主要包括数据库对象的创建 删除及修改操作
-创建create 删除drop 修改alter
-crea
+service 
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-23
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/Blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
-                                    数据库
+                                <a href="/Blog/categories/Linux%E5%85%A5%E9%97%A8/" class="post-category">
+                                    Linux入门
                                 </a>
                                 
                                 
@@ -522,8 +503,8 @@ crea
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/Blog/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
-                            <span class="chip bg-color">数据库</span>
+                        <a href="/Blog/tags/Linux%E5%85%A5%E9%97%A8/">
+                            <span class="chip bg-color">Linux入门</span>
                         </a>
                         
                     </div>
@@ -533,29 +514,28 @@ crea
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/Blog/2020/10/05/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/4-2-oracle-shu-ju-lei-xing/">
+                    <a href="/Blog/2020/09/23/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/0-1-guan-li-oracle/">
                         <div class="card-image">
                             
                             
-                            <img src="/Blog/medias/featureimages/19.jpg" class="responsive-img" alt="4-2 Oracle数据类型">
+                            <img src="/Blog/medias/featureimages/9.jpg" class="responsive-img" alt="0-1 管理Oracle">
                             
-                            <span class="card-title">4-2 Oracle数据类型</span>
+                            <span class="card-title">0-1 管理Oracle</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                数据类型, 即Oracle 数据库中支持的存储数据类型
-通过管理工具PL/SQL Developer 查看Oracle数据类型
-
+                                概述
         document.querySelectorAll('.github-emoji')
-    
+          .forEach(el => {
+            if (!el.dataset.src) { retu
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-23
                             </span>
                             <span class="publish-author">
                                 
@@ -584,28 +564,30 @@ crea
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/Blog/2020/10/05/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/4-1-sql-gai-shu/">
+                    <a href="/Blog/2020/09/23/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/0-qian-yan/">
                         <div class="card-image">
                             
                             
-                            <img src="/Blog/medias/featureimages/4.jpg" class="responsive-img" alt="4-1 SQL概述">
+                            <img src="/Blog/medias/featureimages/11.jpg" class="responsive-img" alt="0 前言">
                             
-                            <span class="card-title">4-1 SQL概述</span>
+                            <span class="card-title">0 前言</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                什么是SQLSQL(Structured Query Language) 结构化查询语言 用于存取 查询更新数据和管理关系数据系统
-SQL分类根据SQL指令完成的数据库操作不同, 可以分为四类
+                                我学习的是Oracle 18c 版本 系统是Oracle linux7.6版本
+这些笔记都是我在学习过程中的记录,许多内容都来自于网络搜索
+本人推荐查看官方文档进行学习oracle
+http://docs.oracle.com/en/
 
-DDL( Data Definfinon L
+ 
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-23
                             </span>
                             <span class="publish-author">
                                 
@@ -634,115 +616,7 @@ DDL( Data Definfinon L
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/Blog/2020/10/05/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/3-3-plsql-developer/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/Blog/medias/featureimages/3.jpg" class="responsive-img" alt="3-3 PLSQL Developer">
-                            
-                            <span class="card-title">3-3 PLSQL Developer</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                PL/SQL Developer
-商业性工具,需要付费 使用人多
-相对于PL/SQL Developer 更容易上手
-是一种集成开发环境 用于开发 测试 调试 优化Oracle PL/SQL存储序单元
-
-
-        document.
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-05
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/Blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
-                                    数据库
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/Blog/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
-                            <span class="chip bg-color">数据库</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/Blog/2020/10/05/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/3-2-shi-yong-sqlplus-guan-li-gong-ju/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/Blog/medias/featureimages/2.jpg" class="responsive-img" alt="3-2 使用sqlplus管理工具">
-                            
-                            <span class="card-title">3-2 使用sqlplus管理工具</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                SQL * PlusOracle自带管理工具
-
-对数据增删改查 操作
-对查询数据的结果进行格式化显示
-对数据库( 用户 角色 表空间 数据表) 进行管理
-
-启动sqlplussqlplus
-用户登录
-本地管理员登录(sys用户) sys/p
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-05
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/Blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
-                                    数据库
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/Blog/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
-                            <span class="chip bg-color">数据库</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/Blog/2020/10/05/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/3-1-oracle-guan-li-gong-ju/">
+                    <a href="/Blog/2020/09/22/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/3-1-oracle-guan-li-gong-ju/">
                         <div class="card-image">
                             
                             
@@ -762,7 +636,7 @@ sqlplus *是一个DOS界面下操作数据库的管理工具, 它与oracle一起
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-22
                             </span>
                             <span class="publish-author">
                                 
@@ -791,7 +665,107 @@ sqlplus *是一个DOS界面下操作数据库的管理工具, 它与oracle一起
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/Blog/2020/10/05/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/2-3-oralce-jian-ting-cheng-xu/">
+                    <a href="/Blog/2020/09/22/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/1-1-an-zhuang-oracle/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/Blog/medias/featureimages/23.jpg" class="responsive-img" alt="1-1安装oracle">
+                            
+                            <span class="card-title">1-1安装oracle</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                一、安装Oracle 12c1、安装CentOS 7操作系统的注意事项由于本次安装Oracle 12c软件是在CentOS 7系统上实现的，那么首先安装CentOS 7操作系统，安装要求如下：
+
+
+防火墙的配置选项设置为禁用；
+SELinu
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-22
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/Blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                    数据库
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/Blog/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                            <span class="chip bg-color">数据库</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/Blog/2020/09/22/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/oracle-linux7.6-install-oracle-database-18c/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/Blog/medias/featureimages/1.jpg" class="responsive-img" alt="Oracle linux7.6 install oracle database 18c">
+                            
+                            <span class="card-title">Oracle linux7.6 install oracle database 18c</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                +Simple demonstration on how to install Oracle database 18c in Oracle Linux 7.6 64-bit OS.
+Steps are given below:
+Step 1
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-22
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/Blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                    数据库
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/Blog/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">
+                            <span class="chip bg-color">数据库</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/Blog/2020/09/22/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/2-3-oralce-jian-ting-cheng-xu/">
                         <div class="card-image">
                             
                             
@@ -818,7 +792,7 @@ Oracle n
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-22
                             </span>
                             <span class="publish-author">
                                 
@@ -847,7 +821,7 @@ Oracle n
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/Blog/2020/10/05/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/2-2-chuang-jian-shan-chu-oracle-shu-ju-ku/">
+                    <a href="/Blog/2020/09/22/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/2-2-chuang-jian-shan-chu-oracle-shu-ju-ku/">
                         <div class="card-image">
                             
                             
@@ -871,7 +845,7 @@ windos: 直接点击Database Configuration Assistant
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-22
                             </span>
                             <span class="publish-author">
                                 
@@ -900,7 +874,7 @@ windos: 直接点击Database Configuration Assistant
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/Blog/2020/10/05/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/2-1-oracle-shi-li/">
+                    <a href="/Blog/2020/09/22/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/2-1-oracle-shi-li/">
                         <div class="card-image">
                             
                             
@@ -923,7 +897,7 @@ Oracle数据库实例, 运行在Oracle服务端为接收用户请求 并提供�
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-22
                             </span>
                             <span class="publish-author">
                                 
@@ -952,29 +926,30 @@ Oracle数据库实例, 运行在Oracle服务端为接收用户请求 并提供�
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/Blog/2020/10/05/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/1-4-oracle-fang-wen-ji-zhi/">
+                    <a href="/Blog/2020/09/21/sui-xin-ji/shu-ju-ku/oracle-shu-ju-ku/ru-men-zhi-shi/1-3-oracle-li-shi/">
                         <div class="card-image">
                             
                             
-                            <img src="/Blog/medias/featureimages/7.jpg" class="responsive-img" alt="1-4 Oracle访问机制">
+                            <img src="/Blog/medias/featureimages/19.jpg" class="responsive-img" alt="1-3 Oracle历史">
                             
-                            <span class="card-title">1-4 Oracle访问机制</span>
+                            <span class="card-title">1-3 Oracle历史</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Oracle访问机制Oracle 数据库访问基于客户端/服务端 模式实现
+                                Oracle历史
 
-oracle数据库软件: oracle服务器
-oralce实例 : 运行在服务器中的服务 接受响应客户端请求
-oracle数据库 运行在Oracle数据库实例中为客
+
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-21
                             </span>
                             <span class="publish-author">
                                 
